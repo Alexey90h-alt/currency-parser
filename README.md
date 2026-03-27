@@ -1,19 +1,14 @@
-# 💰 Простой парсер курсов валют (ЦБ РФ)
+# 💰 Парсер курсов валют
 
-Скрипт на Python, который собирает актуальные курсы **USD** и **EUR** напрямую с сайта Центрального Банка России и выводит их в консоль.
+Скрипт для получения курса USD и EUR с сайта ЦБ РФ.
 
-## ✨ Особенности
-* Автоматический сбор данных 
-* Вывод курса Доллара США и Евро в рублях.
-* (Опционально) Сохранение истории запросов в файл `rates.txt`.
+### Как запустить:
 
-## 🛠 Технологии
-* **Python 3.x**
-* **Requests** — для работы с HTTP-запросами.
-* **BeautifulSoup4** — для парсинга HTML-кода страницы.
+1. Скачать:
+git clone https://github.com/Alexey90h-alt/currency-parser.git
 
-## 🚀 Как запустить
+2. Установить библиотеки:
+pip install requests beautifulsoup4
 
-1. Клонируйте репозиторий:
-   ```bash
-   git clone [https://github.com/Alexey90h-alt/currency-parser.git](https://github.com/Alexey90h-alt/currency-parser.git)
+3. Запустить:
+python parser.py
