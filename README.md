@@ -16,4 +16,4 @@
 
 1. Клонируйте репозиторий:
    ```bash
-  [git clone](https://github.com/Alexey90h-alt/currency-parser.git)
+   git clone [https://github.com/Alexey90h-alt/currency-parser.git](https://github.com/Alexey90h-alt/currency-parser.git)
