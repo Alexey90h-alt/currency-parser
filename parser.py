@@ -7,19 +7,17 @@ def get_currencies():
     soup = BeautifulSoup(response.text, "html.parser")
     
     items = soup.find_all("tr")
-    
-    # Список валют, которые нам интересны
     targets = ["USD", "EUR"]
     
     print("--- Актуальный курс валют ---")
     
     for item in items:
-        # Проверяем, есть ли в строке USD или EUR
         for target in targets:
             if target in item.text:
                 data = item.find_all("td")
                 name = data[3].text
-                value = data[4].text
-                print(f"✅ {name}: {value} руб.")
+                value_num = float(data[4].text.replace(',', '.'))
+                
+                print(f"✅ {name}: {value_num:.2f} руб.")
 
 get_currencies()
